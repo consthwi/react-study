@@ -1,0 +1,7 @@
+.App {
+  background: url(../public/images/weather_bg.jpg) no-repeat top/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,56 @@
+@keyframes choiceEffect{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-5px);
+  }
+}
+
+.RockScissorsPaperGame {
+  font-family: 'Times New Roman', Times, serif;
+  width: 90%;
+  max-width: 1120px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+}
+
+.RockScissorsPaperGame .play-area {
+  display: flex;
+}
+
+.RockScissorsPaperGame .choice-area {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.RockScissorsPaperGame .choice-area button {
+  padding: 1em;
+  font-size: min(3vw, 1.3em);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  opacity: 0.5;
+  transition: 0.4s all;
+}
+
+.RockScissorsPaperGame .choice-area button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.8) 2px 2px;
+  animation: choiceEffect 0.4s forwards;
+}
+
+.win {
+  border: 5px solid blue;
+  color: blue;
+  transform: translateY(-20px) scale(1.05);
+  z-index: 1;
+}
+
+.lose {
+  opacity: 0.3;
+}
+
+.draw {
+  color: green;
+}

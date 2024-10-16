@@ -1,0 +1,72 @@
+.Navbar {
+  /* border: 3px solid red; */
+  padding: 30px 15px;
+}
+
+.login-area {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  cursor: pointer
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-section img {
+  cursor: pointer;
+}
+
+.menu-area {
+  /* border: 3px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 5px;
+  width: 150px;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+  padding: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 8px 4px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 25px 0 0 25px;
+}
+
+@media(max-width: 1024px) {
+
+  .menu-area {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    /* border: 3px solid blue; */
+    margin: 0 auto;
+  }
+
+  .search-box {
+    position: static;
+    width: 100%;
+    height: 43px;
+    padding: 12px;
+  }
+}

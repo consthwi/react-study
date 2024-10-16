@@ -1,0 +1,8 @@
+.ControlBox {
+  position: relative;
+}
+
+.search-input-area {
+  display: flex;
+  gap: 5px;
+}
