@@ -1,0 +1,34 @@
+.WeatherApp {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.WeatherApp.clear {
+  background: url(../public/clear_bg.jpg) no-repeat top/cover;
+}
+
+.WeatherApp.clear .WeatherBox-content-ico {
+  background: url(../public/sunny.png) no-repeat center/contain;
+}
+
+.WeatherApp.clouds {
+  background: url(../public/clouds_bg.jpg) no-repeat top/cover;
+}
+.WeatherApp.clouds .WeatherBox-content-ico {
+  background: url(../public/cloudy.png) no-repeat center/contain;
+}
+.WeatherApp.rain {
+  background: url(../public/rain_bg.jpg) no-repeat top/cover;
+}
+.WeatherApp.rain .WeatherBox-content-ico {
+  background: url(../public/rainy.png) no-repeat center/contain;
+}
+
+@media (max-width: 767px){
+  .WeatherApp-wrapper {
+    width: 80%;
+    border: 3px solid red;
+  }
+}

@@ -1,0 +1,20 @@
+.Box {
+  border: 3px solid blue;
+  text-align: center;
+  width: 50%;
+}
+
+.Box .img-wrap {
+  border: 3px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  min-height: 200px;
+}
+
+.Box .img-wrap img {
+  width: 80%;
+  border: 3px solid salmon;
+}
+

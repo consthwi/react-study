@@ -1,0 +1,30 @@
+.ProductCard {
+  margin-bottom: 30px;
+  text-align: center;
+  transition: 0.2s transform;
+}
+
+.ProductCard:hover {
+  transform: scale(1.05);
+  border: 3px inset #333 ;
+  z-index: 1;
+}
+
+.img-wrapper {
+  cursor: pointer
+}
+
+.img-wrapper img {
+  width: 100%;
+  
+}
+
+.product-dis {
+  padding: 10px 0;
+}
+
+@media(max-width: 575px){
+  .ProductCard {
+    margin: 15px;
+  }
+}

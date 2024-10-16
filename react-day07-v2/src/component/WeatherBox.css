@@ -1,0 +1,91 @@
+.WeatherBox {
+  /* border: 3px solid blue; */
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.WeatherBox-content {
+  display: flex;
+  /* border: 2px solid blue; */
+  gap: 10px;
+}
+
+.WeatherBox-content-ico {
+  /* border: 3px solid red; */
+  width: 50px;
+  height: 50px;
+}
+
+.WeatherBox .WeatherBox-content-temp {
+  /* border: 1px solid red; */
+  font-size: 4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.WeatherBox .WeatherBox-content-temp .temp-fahrenheit {
+  font-size: 2rem;
+  color: #ddd;
+}
+
+.WeatherBox .WeatherBox-description {
+  font-size: 1.5rem;
+}
+
+.WeatherBox .WeatherBox-content2{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.WeatherBox .WeatherBox-content2 > div > div {
+  width: 120px;
+  min-height: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.WeatherBox-content2-row1, .WeatherBox-content2-row2 {
+  display: flex;
+  gap: 20px;
+}
+
+.temp-high-img {
+  background: url(../../public/high_temp.png) no-repeat center/contain;
+}
+
+.temp-low-img {
+  background: url(../../public/low_temp.png) no-repeat center/contain;
+}
+
+.windy-img {
+  background: url(../../public/windy.png) no-repeat center/contain;
+}
+
+.humidity-img {
+  background: url(../../public/humidity.png) no-repeat center/contain;
+}
+
+.WeatherBox .WeatherBox-content2 p {
+  /* border: 1px solid red; */
+  height: 50px;
+  padding-top: 10px;
+  text-shadow: #000 1px 1px 2px;
+}
+
+@media(max-width: 767px){
+  .WeatherBox .WeatherBox-content2 {
+    flex-wrap: wrap;
+  }
+}

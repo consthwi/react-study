@@ -1,0 +1,49 @@
+@keyframes choiceEffect{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-5px);
+  }
+}
+
+.RockScissorsPaper {
+  border: 1px solid #333;
+  box-shadow: #000000CC 0px 0px 10px;
+  width: 80%;
+  max-width: 1120px;
+}
+
+.RockScissorsPaper .game-area {
+  display: flex;
+}
+
+.RockScissorsPaper .choice-area {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.RockScissorsPaper .choice-area button {
+  padding: 1em;
+  font-size: min(3vw, 1.3em);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+
+.RockScissorsPaper .choice-area button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.8) 2px 2px;
+  animation: choiceEffect 0.4s forwards;
+}
+
+@media(max-width: 767px){
+  .RockScissorsPaper .game-area {
+    flex-direction: column-reverse;
+  }
+}
+

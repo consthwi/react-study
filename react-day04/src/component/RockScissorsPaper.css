@@ -1,0 +1,16 @@
+.RockScissorsPaper {
+  border: 3px solid red;
+  width: 80%;
+  max-width: 1120px;
+}
+
+.RockScissorsPaper .game-area {
+  display: flex;
+}
+
+.RockScissorsPaper .choice-area {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
